@@ -1,5 +1,7 @@
 package com.dsa.search;
 
+//Time complexity O(N)
+//Space complexity O(1)
 public class LinearSearch {
     public static void main(String[] args) {
         int[] arr={23,1,4,65,97,5,47,54,61};
