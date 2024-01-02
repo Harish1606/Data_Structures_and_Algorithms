@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //Also called as Sinking sort or exchange sort
 //Time complexity O(N*N)
-//Time complexity O(1)
+//Space complexity O(1)
 //It comes under stable sorting algorithm where order of the duplicate elements will not be changed
 public class BubbleSort {
     public static void main(String[] args) {
