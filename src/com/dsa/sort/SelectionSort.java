@@ -2,7 +2,7 @@ package com.dsa.sort;
 
 import java.util.Arrays;
 
-//Time complexity O(N*N)
+//Time complexity best - O(N*N), worst - O(N*N)
 //Space complexity O(1)
 //It comes under unstable sorting algorithm where order of the duplicate elements will be changed
 public class SelectionSort {

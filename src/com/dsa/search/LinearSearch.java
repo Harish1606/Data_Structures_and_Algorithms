@@ -1,6 +1,6 @@
 package com.dsa.search;
 
-//Time complexity O(N)
+//Time complexity best - O(1), worst - O(N)
 //Space complexity O(1)
 public class LinearSearch {
     public static void main(String[] args) {

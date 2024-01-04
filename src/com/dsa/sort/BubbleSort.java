@@ -3,7 +3,7 @@ package com.dsa.sort;
 import java.util.Arrays;
 
 //Also called as Sinking sort or exchange sort
-//Time complexity O(N*N)
+//Time complexity best - O(N), worst - O(N*N)
 //Space complexity O(1)
 //It comes under stable sorting algorithm where order of the duplicate elements will not be changed
 public class BubbleSort {

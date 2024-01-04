@@ -2,7 +2,7 @@ package com.dsa.search;
 
 import java.util.Arrays;
 
-//Time complexity O(logN)
+//Time complexity best - O(1), worst - O(logN)
 //Space complexity O(1)
 public class BinarySearch {
     public static void main(String[] args) {
