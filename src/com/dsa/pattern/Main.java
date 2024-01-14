@@ -13,6 +13,12 @@ public class Main {
         pattern5(5);
         System.out.println();
         pattern6(5);
+        System.out.println();
+        pattern7(4);
+        System.out.println();
+        pattern8(4);
+        System.out.println();
+        pattern9(4);
     }
 
     static void pattern1(int n){
@@ -89,6 +95,41 @@ public class Main {
             }
             for(int j=2;j<=i;j++){
                 System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern7(int n){
+        n=2*n;
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=n;j++){
+                int atEveryIndex=Math.min(Math.min(i,j),Math.min(n-i,n-j));
+                System.out.print(atEveryIndex+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern8(int n){
+        int originalN=n;
+        n=2*n;
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=n;j++){
+                int atEveryIndex=originalN-Math.min(Math.min(i,j),Math.min(n-i,n-j));
+                System.out.print(atEveryIndex+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern9(int n){
+        int originalN=n;
+        n=2*n-2;
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=n;j++){
+                int atEveryIndex=originalN-Math.min(Math.min(i,j),Math.min(n-i,n-j));
+                System.out.print(atEveryIndex+" ");
             }
             System.out.println();
         }
