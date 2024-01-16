@@ -1,5 +1,6 @@
-package com.dsa.recursion;
+package com.dsa.recursion.common;
 
+//Uses linear recurrence
 public class SequenceOfNumbers {
     public static void main(String[] args) {
         sequence(5);
