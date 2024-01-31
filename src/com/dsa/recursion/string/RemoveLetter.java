@@ -1,7 +1,7 @@
 package com.dsa.recursion.string;
 
 //Time complexity - O(N)
-//Space complexity - O(n)
+//Space complexity - O(N)
 public class RemoveLetter {
     public static void main(String[] args) {
         String s = "cgandhapplekdif";
