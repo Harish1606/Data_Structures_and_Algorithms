@@ -1,4 +1,4 @@
-package com.dsa.common;
+package com.dsa.recursion.array;
 
 import java.util.ArrayList;
 import java.util.List;
