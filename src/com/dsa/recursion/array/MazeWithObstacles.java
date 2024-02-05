@@ -1,4 +1,4 @@
-package com.dsa.common;
+package com.dsa.recursion.array;
 
 public class MazeWithObstacles {
     public static void main(String[] args) {
