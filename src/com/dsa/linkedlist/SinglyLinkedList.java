@@ -49,6 +49,20 @@ public class SinglyLinkedList {
         size++;
     }
 
+    public void insertRec(int val, int index) {
+        head = insertRec(val, index, head);
+    }
+
+    private Node insertRec(int val, int index, Node node){
+        if(index == 0){
+            Node temp = new Node(val, node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(val, index-1, node.next);
+        return node;
+    }
+
     public int deleteFirst(){
         int val = head.val;
         head = head.next;
@@ -100,7 +114,7 @@ public class SinglyLinkedList {
             System.out.print(node.val + " -> ");
             node = node.next;
         }
-        System.out.print("END");
+        System.out.println("END");
     }
 
     private class Node{
@@ -112,6 +126,7 @@ public class SinglyLinkedList {
         }
 
         public Node(int val, Node next){
+            this.val = val;
             this.next = next;
         }
     }
