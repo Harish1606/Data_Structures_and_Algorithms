@@ -40,5 +40,15 @@ public class Main {
         circularQueue.insert(19);
         circularQueue.display();
 
+        System.out.println("Dynamic circular queue starts from here -----------------");
+
+        DynamicCircularQueue dynamicCircularQueue = new DynamicCircularQueue(5);
+        dynamicCircularQueue.insert(1);
+        dynamicCircularQueue.insert(9);
+        dynamicCircularQueue.insert(4);
+        dynamicCircularQueue.insert(11);
+        dynamicCircularQueue.insert(18);
+        dynamicCircularQueue.insert(16);
+        dynamicCircularQueue.display();
     }
 }
