@@ -26,5 +26,19 @@ public class Main {
         customQueue.insert(9);
         System.out.println(customQueue.remove());
         System.out.println(customQueue.peek());
+
+        System.out.println("Circular queue starts from here -----------------");
+
+        CircularQueue circularQueue = new CircularQueue(5);
+        circularQueue.insert(13);
+        circularQueue.insert(8);
+        circularQueue.insert(1);
+        circularQueue.insert(5);
+        circularQueue.insert(9);
+        System.out.println(circularQueue.remove());
+        System.out.println(circularQueue.peek());
+        circularQueue.insert(19);
+        circularQueue.display();
+
     }
 }
