@@ -7,5 +7,6 @@ public class Main {
         BinaryTree binaryTree = new BinaryTree();
         binaryTree.populate(new Scanner(System.in));
         binaryTree.display();
+        binaryTree.prettyDisplay();
     }
 }
