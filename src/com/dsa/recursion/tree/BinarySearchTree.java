@@ -40,6 +40,21 @@ public class BinarySearchTree {
         }
     }
 
+    public void populateSorted(int[] nums){
+       populateSorted(nums, 0, nums.length-1);
+    }
+
+    private void populateSorted(int[] nums, int start, int end){
+        if(start > end){
+            return;
+        }
+        int mid = (start + end) / 2;
+        this.insert(nums[mid]);
+        populateSorted(nums, start, mid-1);
+        populateSorted(nums, mid+1, end);
+
+    }
+
     public void insert(int value){
         this.root = insert(value, root);
     }
@@ -83,6 +98,6 @@ public class BinarySearchTree {
         System.out.println(details + node.value);
         display(node.left, "Left child of " + node.value + " : ");
         display(node.right, "Right child of " + node.value + " : ");
-
     }
+
 }
