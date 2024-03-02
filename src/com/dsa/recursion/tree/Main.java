@@ -13,5 +13,16 @@ public class Main {
         BinarySearchTree binarySearchTree = new BinarySearchTree();
         binarySearchTree.populate(nums);
         binarySearchTree.display();
+        binarySearchTree.preOrder();
+        binarySearchTree.inOrder();
+        binarySearchTree.postOrder();
+
+        System.out.println("Binary search tree for sorted array");
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        BinarySearchTree binarySearchTree1 = new BinarySearchTree();
+        binarySearchTree1.populateSorted(arr);
+        binarySearchTree1.display();
+
+
     }
 }
