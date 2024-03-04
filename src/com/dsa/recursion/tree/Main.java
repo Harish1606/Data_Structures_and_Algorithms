@@ -23,6 +23,13 @@ public class Main {
         binarySearchTree1.populateSorted(arr);
         binarySearchTree1.display();
 
+        System.out.println("AVL tree implementation starts");
+        AVLTree avlTree = new AVLTree();
+        for(int i=0;i<11;i++){
+            avlTree.insert(i);
+        }
+        avlTree.display();
+
 
     }
 }
