@@ -14,5 +14,14 @@ public class Main {
         System.out.println(heap.remove());
 
         System.out.println(heap.heapSort());
+
+        System.out.println("Huffman coding implementation starts ----------->");
+
+        String str = "abbccda";
+        HuffmanCoder huffmanCoder = new HuffmanCoder(str);
+        String encodedString = huffmanCoder.encode(str);
+        System.out.println(encodedString);
+        String decodedString = huffmanCoder.decode(encodedString);
+        System.out.println(decodedString);
     }
 }
